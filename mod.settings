@@ -1,7 +1,7 @@
 name        = "SiegePlusPlus Balance"
-source_dir  = "source/"
-output_dir  = "output/"
-description = [=[SiegePlusPlus Balance mod]=]
+source_dir  = "source"
+output_dir  = "output"
+description = [=[The Siege++ balance mod, designed for the Siege++Collection https://github.com/TheRealNin/Siege-Collection]=]
 image       = "preview.jpg"
 tag_modtype = "Gameplay Tweak"
 tag_support = "Must be run on Server"
