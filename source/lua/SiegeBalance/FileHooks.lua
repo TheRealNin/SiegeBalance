@@ -3,3 +3,5 @@ ModLoader.SetupFileHook( "lua/BalanceHealth.lua", "lua/SiegeBalance/BalanceHealt
 ModLoader.SetupFileHook( "lua/BalanceMisc.lua", "lua/SiegeBalance/BalanceMisc.lua", "post" )
 
 ModLoader.SetupFileHook( "lua/Weapons/BulletsMixin.lua", "lua/SiegeBalance/Weapons/BulletsMixin.lua", "post" )
+
+ModLoader.SetupFileHook( "lua/Exo.lua", "lua/SiegeBalance/Exo.lua", "post")
