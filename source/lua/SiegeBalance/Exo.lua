@@ -1,5 +1,4 @@
-local kNewThrusterDuration = 2.25
-local kThrustersCooldownTime = 3.75
+kNewThrusterDuration = 2.25
 
 function Exo:GetFuel()
     if self.thrustersActive then
