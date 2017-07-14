@@ -18,3 +18,7 @@ function MAC:OnCreate()
 	InitMixin(self, ResearchMixin)
 	InitMixin(self, RecycleMixin)
 end
+
+function MAC:GetIsBuilt()
+	return true
+end
