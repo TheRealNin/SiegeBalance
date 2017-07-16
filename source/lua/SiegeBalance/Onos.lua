@@ -7,8 +7,11 @@ function Onos:ModifyDamageTaken(damageTable, attacker, doer, damageType, hitPoin
     if self:GetIsCharging() then
 
           damageTable.damage = damageTable.damage * kOnosChargeDamageReduction
-          --TODO Exclude local player and trigger local-player only effect
-          self:TriggerEffects("boneshield_blocked", { effecthostcoords = Coords.GetTranslation(hitPoint) } )
+          
+          if doer:GetClassName() ~= "railgun" then
+            --TODO Exclude local player and trigger local-player only effect
+            self:TriggerEffects("boneshield_blocked", { effecthostcoords = Coords.GetTranslation(hitPoint) } )
+          end
         
     end
 
