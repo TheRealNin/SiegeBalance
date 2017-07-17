@@ -13,3 +13,6 @@ kOnosGestateTime = 13 -- was 30
 
 -- this is actually very buggy, and is 1-(x/100)
 kNutrientMistPercentageIncrease =  -100 -- was 66
+
+kNutrientMistCost = 5 -- was 2
+kNutrientMistCooldown = 5 -- was 2
