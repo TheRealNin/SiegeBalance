@@ -42,16 +42,39 @@ local helpScreenImages =
     charge              = PrecacheAsset("ui/helpScreen/icons/charge.dds"),
     boneShield          = PrecacheAsset("ui/helpScreen/icons/bone_shield.dds"),
     stomp               = PrecacheAsset("ui/helpScreen/icons/stomp.dds"),
+    welcome             = PrecacheAsset("materials/editor/unknown_billboard.dds"),
 }
 function HelpScreen_InitializeContent()
+    -- Siege Intro
+     HelpScreen_AddContent({
+        name = "Siege_Intro",
+        title = "Welcome to\n    Siege++!",
+        description = " Aliens have until the siege doors open to defeat the Marines. Once the doors open, the hives become ARC-able!",
+        imagePath = helpScreenImages.welcome,
+        actions = {},
+        classNames = {"Alien", "Marine", "Exo", "ReadyRoomPlayer"},
+        theme = "marine",
+        useLocale = false,
+        })
     -- Onos Buffs
      HelpScreen_AddContent({
         name = "Onos_Buff",
-        title = "Onos buff",
+        title = "Onos",
         description = "Onos have 50% extra HP and unlimited boneshield. Additionally, charge reduces damage by 30%.",
         imagePath = helpScreenImages.charge,
         actions = {},
-        classNames = {"Alien", "Marine"},
+        classNames = {"Alien", "Marine", "Exo"},
+        theme = "alien",
+        useLocale = false,
+        })
+    -- Egg Buffs
+     HelpScreen_AddContent({
+        name = "Gestation",
+        title = "Gestation",
+        description = "Aliens now evolve faster, and don't need to be misted.",
+        imagePath = helpScreenImages.bite,
+        actions = {},
+        classNames = {"Alien", "Marine", "Exo"},
         theme = "alien",
         useLocale = false,
         })
@@ -62,7 +85,19 @@ function HelpScreen_InitializeContent()
         description = "Jetpacks now have 25% additional fuel.",
         imagePath = helpScreenImages.jetpack,
         actions = {},
-        classNames = {"Alien", "Marine"},
+        classNames = {"Alien", "Marine", "Exo"},
+        theme = "marine",
+        useLocale = true,
+        })
+        
+    -- Armories
+    HelpScreen_AddContent({
+        name = "Armory_armor",
+        title = "Armories",
+        description = "Armories now regenerate armor. What a concept!",
+        imagePath = helpScreenImages.welder,
+        actions = {},
+        classNames = {"Alien", "Marine", "Exo"},
         theme = "marine",
         useLocale = true,
         })
