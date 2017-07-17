@@ -7,3 +7,7 @@ ModLoader.SetupFileHook( "lua/ARC.lua", "lua/SiegeBalance/postARC.lua" , "post" 
 ModLoader.SetupFileHook( "lua/TechData.lua", "lua/SiegeBalance/TechData.lua" , "post" )
 ModLoader.SetupFileHook( "lua/VoiceOver.lua", "lua/SiegeBalance/VoiceOver.lua" , "post" )
 ModLoader.SetupFileHook( "lua/Onos.lua", "lua/SiegeBalance/Onos.lua" , "post" )
+
+
+-- this replaces all help screens
+ModLoader.SetupFileHook( "lua/Hud/HelpScreen/HelpScreenContent.lua", "lua/SiegeBalance/HelpScreenContent.lua" , "post" )
