@@ -1,5 +1,29 @@
 
 
+local kBlockDoers =
+{
+    "Minigun",
+    "Pistol",
+    "Rifle",
+    "HeavyRifle",
+    "HeavyMachineGun",
+    "Shotgun",
+    "Axe",
+    "Welder",
+    "Sentry",
+    "Grenade",
+    "PulseGrenade",
+    "ClusterFragment",
+    "Mine",
+    "Claw"
+}
+
+
+local function GetHitsChargeEffect(self, doer, hitPoint)
+
+    return table.contains(kBlockDoers, doer:GetClassName())
+end
+
 local oldModifyDamageTaken = Onos.ModifyDamageTaken
 function Onos:ModifyDamageTaken(damageTable, attacker, doer, damageType, hitPoint)
     oldModifyDamageTaken(self, damageTable, attacker, doer, damageType, hitPoint)
@@ -8,8 +32,8 @@ function Onos:ModifyDamageTaken(damageTable, attacker, doer, damageType, hitPoin
 
           damageTable.damage = damageTable.damage * kOnosChargeDamageReduction
           
-          if doer:GetClassName() ~= "railgun" then
-            --TODO Exclude local player and trigger local-player only effect
+          if GetHitsChargeEffect(self, doer, hitPoint) then
+          
             self:TriggerEffects("boneshield_blocked", { effecthostcoords = Coords.GetTranslation(hitPoint) } )
           end
         
