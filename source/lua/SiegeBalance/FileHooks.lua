@@ -13,3 +13,10 @@ ModLoader.SetupFileHook( "lua/Onos.lua", "lua/SiegeBalance/Onos.lua" , "post" )
 -- this replaces all help screens
 ModLoader.SetupFileHook( "lua/Hud/HelpScreen/HelpScreenContent.lua", "lua/SiegeBalance/HelpScreenContent.lua" , "post" )
 ModLoader.SetupFileHook( "lua/Hud/HelpScreen/HelpScreen.lua", "lua/SiegeBalance/HelpScreen.lua" , "post" )
+
+
+
+-- these are fixes to NS2's shitty code
+
+ModLoader.SetupFileHook( "lua/Weapons/Marine/Grenade.lua", "lua/SiegeBalance/Grenade.lua" , "post" )
+ModLoader.SetupFileHook( "lua/NS2Utility.lua", "lua/SiegeBalance/NS2Utility.lua" , "post" )
