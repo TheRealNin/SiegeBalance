@@ -52,18 +52,29 @@ function HelpScreen_InitializeContent()
         description = " Aliens have until the siege doors open to defeat the Marines. Once the doors open, the hives become ARC-able!",
         imagePath = helpScreenImages.welcome,
         actions = {},
-        classNames = {"Alien", "Marine", "Exo", "ReadyRoomPlayer"},
+        classNames = {"Player"},
         theme = "marine",
+        useLocale = false,
+        })
+    -- Alien Buffs
+     HelpScreen_AddContent({
+        name = "Alien_Buff2",
+        title = "Alien HP",
+        description = "Holy shit we must be idiots, since we've buffed ALL ALIEN HP BY 25%! Please let us know how dumb this is. Vocally. Often.",
+        imagePath = helpScreenImages.gore,
+        actions = {},
+        classNames = {"Player"},
+        theme = "alien",
         useLocale = false,
         })
     -- Onos Buffs
      HelpScreen_AddContent({
         name = "Onos_Buff",
         title = "Onos",
-        description = "Onos have 50% extra HP and unlimited boneshield. Additionally, charge reduces damage by 30%.",
+        description = "Onos have an extra 25% HP and unlimited boneshield. Additionally, charge reduces damage by 30%.",
         imagePath = helpScreenImages.charge,
         actions = {},
-        classNames = {"Alien", "Marine", "Exo"},
+        classNames = {"Player"},
         theme = "alien",
         useLocale = false,
         })
@@ -74,7 +85,7 @@ function HelpScreen_InitializeContent()
         description = "Aliens now evolve faster, and don't need to be misted.",
         imagePath = helpScreenImages.bite,
         actions = {},
-        classNames = {"Alien", "Marine", "Exo"},
+        classNames = {"Player"},
         theme = "alien",
         useLocale = false,
         })
@@ -85,7 +96,7 @@ function HelpScreen_InitializeContent()
         description = "Jetpacks now have 25% additional fuel.",
         imagePath = helpScreenImages.jetpack,
         actions = {},
-        classNames = {"Alien", "Marine", "Exo"},
+        classNames = {"Player"},
         theme = "marine",
         useLocale = true,
         })
@@ -97,7 +108,7 @@ function HelpScreen_InitializeContent()
         description = "Armories now regenerate armor. What a concept!",
         imagePath = helpScreenImages.welder,
         actions = {},
-        classNames = {"Alien", "Marine", "Exo"},
+        classNames = {"Player"},
         theme = "marine",
         useLocale = true,
         })
