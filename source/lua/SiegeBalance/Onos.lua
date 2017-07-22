@@ -32,10 +32,10 @@ function Onos:ModifyDamageTaken(damageTable, attacker, doer, damageType, hitPoin
 
           damageTable.damage = damageTable.damage * kOnosChargeDamageReduction
           
-          if GetHitsChargeEffect(self, doer, hitPoint) then
+          --if GetHitsChargeEffect(self, doer, hitPoint) then
           
-            self:TriggerEffects("boneshield_blocked", { effecthostcoords = Coords.GetTranslation(hitPoint) } )
-          end
+            --self:TriggerEffects("boneshield_blocked", { effecthostcoords = Coords.GetTranslation(hitPoint) } )
+          --end
         
     end
 
