@@ -51,3 +51,14 @@ function HelpScreen:GetShouldDisplay()
     return true
     
 end
+
+local oldHide = HelpScreen.Hide
+function HelpScreen:Hide()
+    oldHide(self)
+    
+    local player = Client.GetLocalPlayer()
+    if not player or player:isa("Commander") then
+        MouseTracker_SetIsVisible(true)
+    end
+    
+end

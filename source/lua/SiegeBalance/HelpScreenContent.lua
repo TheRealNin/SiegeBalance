@@ -58,10 +58,10 @@ function HelpScreen_InitializeContent()
         })
     -- Alien Buffs
      HelpScreen_AddContent({
-        name = "Alien_Buff2",
-        title = "Alien HP",
-        description = "Holy shit we must be idiots, since we've buffed ALL ALIEN HP BY 25%! Please let us know how dumb this is. Vocally. Often.",
-        imagePath = helpScreenImages.gore,
+        name = "Alien_Buff3",
+        title = "Aliens Buffed",
+        description = "All alien HP increased by 25%! Aliens also now evolve faster, and don't need to be misted. ",
+        imagePath = helpScreenImages.leap,
         actions = {},
         classNames = {"Player"},
         theme = "alien",
@@ -71,19 +71,19 @@ function HelpScreen_InitializeContent()
      HelpScreen_AddContent({
         name = "Onos_Buff",
         title = "Onos",
-        description = "Onos have an extra 25% HP and unlimited boneshield. Additionally, charge reduces damage by 30%.",
+        description = "Onos have an extra +25% HP (total 50%!) Boneshield is unlimited and blocks 95% of damage from the front. Charge reduces damage by 30%.",
         imagePath = helpScreenImages.charge,
         actions = {},
         classNames = {"Player"},
         theme = "alien",
         useLocale = false,
         })
-    -- Egg Buffs
+        -- Fade Acid Rocket
      HelpScreen_AddContent({
-        name = "Gestation",
-        title = "Gestation",
-        description = "Aliens now evolve faster, and don't need to be misted.",
-        imagePath = helpScreenImages.bite,
+        name = "Acid_Rocket",
+        title = "Acid Rocket",
+        description = "Fuck stab. We've replaced it with acid rockets. Suck on this, marines!",
+        imagePath = helpScreenImages.stab,
         actions = {},
         classNames = {"Player"},
         theme = "alien",
@@ -93,7 +93,7 @@ function HelpScreen_InitializeContent()
     HelpScreen_AddContent({
         name = "Jetpack_Fuel",
         title = "Jetpack fuel",
-        description = "Jetpacks now have 25% additional fuel.",
+        description = "Jetpacks now have 25% additional fuel! The weight of your items still affects fuel use.",
         imagePath = helpScreenImages.jetpack,
         actions = {},
         classNames = {"Player"},
