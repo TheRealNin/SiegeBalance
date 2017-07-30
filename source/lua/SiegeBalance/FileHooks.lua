@@ -7,6 +7,7 @@ ModLoader.SetupFileHook( "lua/ARC.lua", "lua/SiegeBalance/postARC.lua" , "post" 
 ModLoader.SetupFileHook( "lua/TechData.lua", "lua/SiegeBalance/TechData.lua" , "post" )
 ModLoader.SetupFileHook( "lua/VoiceOver.lua", "lua/SiegeBalance/VoiceOver.lua" , "post" )
 ModLoader.SetupFileHook( "lua/Onos.lua", "lua/SiegeBalance/Onos.lua" , "post" )
+ModLoader.SetupFileHook( "lua/Clog.lua", "lua/SiegeBalance/Clog.lua" , "post" )
 
 
 
