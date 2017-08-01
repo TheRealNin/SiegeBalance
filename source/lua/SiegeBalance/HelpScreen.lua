@@ -54,11 +54,24 @@ end
 
 local oldHide = HelpScreen.Hide
 function HelpScreen:Hide()
+
+    
     oldHide(self)
     
     local player = Client.GetLocalPlayer()
-    if not player or player:isa("Commander") then
-        MouseTracker_SetIsVisible(true)
+    if player:isa("Commander") then
+        MouseTracker_SetIsVisible(true, nil, true)
+    end
+end
+
+local oldUninitialize = HelpScreen.Uninitialize
+function HelpScreen:Uninitialize()
+
+    oldUninitialize(self)
+    
+    local player = Client.GetLocalPlayer()
+    if player:isa("Commander") then
+      MouseTracker_SetIsVisible(false)
     end
     
 end

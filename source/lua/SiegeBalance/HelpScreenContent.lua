@@ -89,6 +89,18 @@ function HelpScreen_InitializeContent()
         theme = "alien",
         useLocale = false,
         })
+        
+    -- Spider Gorge
+    HelpScreen_AddContent({
+        name = "Spider Gorge",
+        title = "Spider Gorge.",
+        description = "Gorges can now walk on walls. We know, it's stupid as hell. Enjoy!",
+        imagePath = helpScreenImages.spit,
+        actions = {},
+        classNames = {"Player"},
+        theme = "alien",
+        useLocale = true,
+        })
     -- Jetpack
     HelpScreen_AddContent({
         name = "Jetpack_Fuel",
