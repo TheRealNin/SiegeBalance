@@ -9,7 +9,9 @@ ModLoader.SetupFileHook( "lua/VoiceOver.lua", "lua/SiegeBalance/VoiceOver.lua" ,
 ModLoader.SetupFileHook( "lua/Onos.lua", "lua/SiegeBalance/Onos.lua" , "post" )
 ModLoader.SetupFileHook( "lua/Clog.lua", "lua/SiegeBalance/Clog.lua" , "post" )
 ModLoader.SetupFileHook( "lua/Globals.lua", "lua/SiegeBalance/Globals.lua" , "post" )
+ModLoader.SetupFileHook( "lua/Crag.lua", "lua/SiegeBalance/Crag.lua", "post")
 ModLoader.SetupFileHook( "lua/PowerPoint.lua", "lua/SiegeBalance/PowerPoint.lua" , "post" )
+
 
 
 
