@@ -1,5 +1,5 @@
 
-function upvalues( func )
+local function upvalues( func )
 	local i = 0;
 	if not func then
 		return function() end
@@ -13,41 +13,41 @@ function upvalues( func )
 		end
 	end
 end
-
-function GetUpValues( func )
-
-	local data = {}
-
-	for _,name,val in upvalues( func ) do
-		data[name] = val;
-	end
-
-	return data
-
+local function LocateUpValue( func, upname, recurse )
+    for i,name,val in upvalues( func ) do
+        if name == upname then
+            return func,i,val
+        end
+    end
+ 
+    if recurse then
+        for i,name,innerfunc in upvalues( func ) do
+            if type( innerfunc ) == "function" then
+                local r = { LocateUpValue( innerfunc, upname, recurse ) }
+                if #r > 0 then
+                    return unpack( r )
+                end
+            end
+        end
+    end
 end
-
-function SetUpValues( func, source )
-
-	for i,name,val in upvalues( func ) do
-		if source[name] then
-    
-			if val ~= nil then
-				assert( val ~= nil )
-				debug.setupvalue( func, i, source[name] )
-			else
-			end
-			source[name] = nil
-		end
-	end
-
+local function ReplaceUpValue( func, localname, newval, options )
+    local i,val;
+ 
+    options = options or {}
+ 
+    func, i, val = LocateUpValue( func, localname, options.LocateRecurse );
+ 
+    if options.CopyUpValues then
+        CopyUpValues( newval, val )
+    end
+ 
+    debug.setupvalue( func, i, newval )
 end
 
 if Server then
   local newDamagedPercentage = 0.8
-  
-  local oldUpValues = GetUpValues(PowerPoint.OnWeldOverride)
-  oldUpValues["kDamagedPercentage"] = newDamagedPercentage
-  SetUpValues(PowerPoint.OnWeldOverride, oldUpValues)  
+  ReplaceUpValue(PowerPoint.OnWeldOverride, "kDamagedPercentage", newDamagedPercentage)  
   
 end
 
