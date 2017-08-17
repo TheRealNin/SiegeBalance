@@ -16,3 +16,5 @@ kNutrientMistPercentageIncrease =  -100 -- was 66
 
 kNutrientMistCost = 5 -- was 2
 kNutrientMistCooldown = 5 -- was 2
+
+kGorgeTunnelBuildTime = 20 -- Was 10
