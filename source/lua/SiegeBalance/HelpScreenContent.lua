@@ -60,7 +60,7 @@ function HelpScreen_InitializeContent()
      HelpScreen_AddContent({
         name = "Alien_Buff3",
         title = "Aliens Buffed",
-        description = "All alien HP increased by 25%! Aliens also now evolve faster, and don't need to be misted. ",
+        description = "All alien HP increased by 25%! Aliens also now evolve faster, and don't need to be misted. Crags heal +50%.",
         imagePath = helpScreenImages.leap,
         actions = {},
         classNames = {"Player"},
@@ -92,9 +92,9 @@ function HelpScreen_InitializeContent()
         
     -- Spider Gorge
     HelpScreen_AddContent({
-        name = "Spider Gorge",
+        name = "Gorge_Changed",
         title = "Spider Gorge.",
-        description = "Gorges can now walk on walls. We know, it's stupid as hell. Enjoy!",
+        description = "Gorges can now walk on walls. The new webby feet take longer to build tunnels though :(",
         imagePath = helpScreenImages.spit,
         actions = {},
         classNames = {"Player"},
@@ -115,9 +115,9 @@ function HelpScreen_InitializeContent()
         
     -- Armories
     HelpScreen_AddContent({
-        name = "Armory_armor",
-        title = "Armories",
-        description = "Armories now regenerate armor. What a concept!",
+        name = "Marine_Structures",
+        title = "Marine Buildings",
+        description = "Armories now regenerate armor. Phase gates now have red and blue 'channels'.",
         imagePath = helpScreenImages.welder,
         actions = {},
         classNames = {"Player"},
