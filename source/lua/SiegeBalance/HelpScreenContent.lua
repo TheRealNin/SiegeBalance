@@ -58,9 +58,9 @@ function HelpScreen_InitializeContent()
         })
     -- Alien Buffs
      HelpScreen_AddContent({
-        name = "Alien_Buff3",
+        name = "Alien_Buff4",
         title = "Aliens Buffed",
-        description = "All alien HP increased by 25%! Aliens also now evolve faster, and don't need to be misted. Crags heal +50%.",
+        description = "All alien HP increased by 25%! Aliens also now evolve faster, and don't need to be misted. Crags heal faster the longer it's been since you took damage, but don't work off of infestation.",
         imagePath = helpScreenImages.leap,
         actions = {},
         classNames = {"Player"},
