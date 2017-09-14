@@ -1,1 +1,1 @@
-kMaxEntityRadius = 10 -- was 15
+kMaxEntityRadius = 7 -- was 15
