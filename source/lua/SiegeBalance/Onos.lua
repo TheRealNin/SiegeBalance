@@ -1,16 +1,4 @@
 
-local oldModifyDamageTaken = Onos.ModifyDamageTaken
-function Onos:ModifyDamageTaken(damageTable, attacker, doer, damageType, hitPoint)
-    oldModifyDamageTaken(self, damageTable, attacker, doer, damageType, hitPoint)
-    
-    if self:GetIsCharging() then
-
-          damageTable.damage = damageTable.damage * kOnosChargeDamageReduction
-          
-    end
-
-end
-
 
 local kBlockDoers =
 {

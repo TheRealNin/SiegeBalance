@@ -69,9 +69,9 @@ function HelpScreen_InitializeContent()
         })
     -- Onos Buffs
      HelpScreen_AddContent({
-        name = "Onos_Buff",
+        name = "Onos_Buff2",
         title = "Onos",
-        description = "Onos have an extra +25% HP (total 50%!) Boneshield is unlimited and blocks 95% of damage from the front. Charge reduces damage by 30%.",
+        description = "Onos have an extra +25% HP (total 50%!) Boneshield is unlimited and blocks 95% of damage from the front.",
         imagePath = helpScreenImages.charge,
         actions = {},
         classNames = {"Player"},
