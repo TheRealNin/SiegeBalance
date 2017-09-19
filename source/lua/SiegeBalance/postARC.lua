@@ -113,3 +113,5 @@ function ARC:OnInitialized()
     InitMixin(self, IdleMixin)
     
 end
+
+Shared.LinkClassToMap("ARC", ARC.kMapName, networkVars, true)

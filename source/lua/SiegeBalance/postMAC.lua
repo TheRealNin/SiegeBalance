@@ -22,3 +22,5 @@ end
 function MAC:GetIsBuilt()
 	return true
 end
+
+Shared.LinkClassToMap("MAC", MAC.kMapName, networkVars, true)
