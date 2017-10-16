@@ -12,6 +12,7 @@ ModLoader.SetupFileHook( "lua/Globals.lua", "lua/SiegeBalance/Globals.lua" , "po
 ModLoader.SetupFileHook( "lua/Crag.lua", "lua/SiegeBalance/Crag.lua", "post")
 ModLoader.SetupFileHook( "lua/PowerPoint.lua", "lua/SiegeBalance/PowerPoint.lua" , "post" )
 ModLoader.SetupFileHook( "lua/Alien_Server.lua", "lua/SiegeBalance/Alien_Server.lua" , "post" )
+ModLoader.SetupFileHook( "lua/Cyst.lua", "lua/SiegeBalance/Cyst.lua" , "post" )
 
 
 

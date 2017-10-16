@@ -20,3 +20,6 @@ kNutrientMistCooldown = 5 -- was 2
 kGorgeTunnelBuildTime = 20 -- Was 10
 
 kARCMinRange = 0 -- was 7
+
+
+kCystUnconnectedDamage = 0.5 -- was 12
