@@ -12,7 +12,7 @@ local mult = 1.25
 kSkulkHealth = 75*mult    kSkulkArmor = 10*mult   kSkulkHealthPerBioMass = 3*mult
 kGorgeHealth = 160*mult   kGorgeArmor = 75*mult   kGorgeHealthPerBioMass = 2*mult
 kLerkHealth = 150*mult    kLerkArmor = 45*mult    kLerkHealthPerBioMass = 2*mult
-kFadeHealth = 250   kFadeArmor = 80   kFadeHealthPerBioMass = 5
+--kFadeHealth = 250   kFadeArmor = 80   kFadeHealthPerBioMass = 5
 --kOnosHealth = 900    kOnosArmor = 450   kOnosHealtPerBioMass = 30
 kEggHealth = 350*mult  
 kBabblerHealth = 10*mult  
@@ -20,6 +20,6 @@ kBabblerHealth = 10*mult
 kSkulkArmorFullyUpgradedAmount = 30*mult
 kGorgeArmorFullyUpgradedAmount = 100*mult
 kLerkArmorFullyUpgradedAmount = 60*mult
-kFadeArmorFullyUpgradedAmount = 120*mult
+--kFadeArmorFullyUpgradedAmount = 120
 
 kDrifterHealth = 300*mult    kDrifterArmor = 20*mult
