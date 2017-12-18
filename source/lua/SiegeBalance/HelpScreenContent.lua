@@ -60,7 +60,7 @@ function HelpScreen_InitializeContent()
      HelpScreen_AddContent({
         name = "Alien_Buff4",
         title = "Aliens Buffed",
-        description = "All alien HP increased by 25%! Aliens also now evolve faster, and don't need to be misted. Crags heal faster the longer it's been since you took damage, but don't work off of infestation.",
+        description = "All alien (except fade) HP increased by 25%. Aliens also now evolve faster, and don't need to be misted. Crags heal faster the longer it's been since you took damage, but don't work off of infestation.",
         imagePath = helpScreenImages.leap,
         actions = {},
         classNames = {"Player"},
@@ -71,7 +71,7 @@ function HelpScreen_InitializeContent()
      HelpScreen_AddContent({
         name = "Onos_Buff2",
         title = "Onos",
-        description = "Onos have an extra +25% HP (total 50%!) Boneshield is unlimited and blocks 95% of damage from the front.",
+        description = "Onos have an extra +25% HP (total 50%) and boneshield is unlimited.",
         imagePath = helpScreenImages.charge,
         actions = {},
         classNames = {"Player"},
