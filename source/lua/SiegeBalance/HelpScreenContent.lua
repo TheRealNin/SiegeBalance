@@ -117,7 +117,7 @@ function HelpScreen_InitializeContent()
     HelpScreen_AddContent({
         name = "Marine_Structures",
         title = "Marine Buildings",
-        description = "Armories now regenerate armor. Phase gates now have red and blue 'channels'.",
+        description = "Armories now regenerate armor. Phase gates now have red and blue 'channels'. Sentries take no supply. Marine commanders can drop un-researched weapons. GL and FT require research. ",
         imagePath = helpScreenImages.welder,
         actions = {},
         classNames = {"Player"},
