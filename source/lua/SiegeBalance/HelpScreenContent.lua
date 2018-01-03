@@ -49,7 +49,7 @@ function HelpScreen_InitializeContent()
      HelpScreen_AddContent({
         name = "Siege_Intro",
         title = "Welcome to\n    Siege++!",
-        description = " Aliens have until the siege doors open to defeat the Marines. Once the doors open, the hives become ARC-able!",
+        description = "Aliens have until the siege doors open to defeat the Marines. Once the doors open, the hives become ARC-able!",
         imagePath = helpScreenImages.welcome,
         actions = {},
         classNames = {"Player"},
@@ -60,7 +60,7 @@ function HelpScreen_InitializeContent()
      HelpScreen_AddContent({
         name = "Alien_Buff4",
         title = "Aliens Buffed",
-        description = "All alien (except fade) HP increased by 25%. Aliens also now evolve faster, and don't need to be misted. Crags heal faster the longer it's been since you took damage, but don't work off of infestation.",
+        description = "All alien HP increased by 25% (except fade who gets +15%). Aliens evolve faster, and don't need to be misted. Crags heal faster the longer it's been since you took damage, but don't work off of infestation.",
         imagePath = helpScreenImages.leap,
         actions = {},
         classNames = {"Player"},
@@ -71,7 +71,7 @@ function HelpScreen_InitializeContent()
      HelpScreen_AddContent({
         name = "Onos_Buff2",
         title = "Onos",
-        description = "Onos have an extra +25% HP (total 50%) and boneshield is unlimited.",
+        description = "Boneshield is unlimited and blocks a larger 'cone' around your head.",
         imagePath = helpScreenImages.charge,
         actions = {},
         classNames = {"Player"},
@@ -82,7 +82,7 @@ function HelpScreen_InitializeContent()
      HelpScreen_AddContent({
         name = "Acid_Rocket",
         title = "Acid Rocket",
-        description = "Fuck stab. We've replaced it with acid rockets. Suck on this, marines!",
+        description = "Fuck stab. We've replaced it with acid rockets. This however makes Fade's health regen from metabolize about half as effective.",
         imagePath = helpScreenImages.stab,
         actions = {},
         classNames = {"Player"},
@@ -105,7 +105,7 @@ function HelpScreen_InitializeContent()
     HelpScreen_AddContent({
         name = "Jetpack_Fuel",
         title = "Jetpack fuel",
-        description = "Jetpacks now have 25% additional fuel! The weight of your items still affects fuel use.",
+        description = "Jetpacks now have 25% additional fuel and the weight of your items affects your acceleration and manuveability instead of fuel use.",
         imagePath = helpScreenImages.jetpack,
         actions = {},
         classNames = {"Player"},
