@@ -1,9 +1,9 @@
 
-kOnosHealth = 900 * 1.5 -- was 900    
-kOnosArmor = 450  * 1.5-- was 450   
-kOnosArmorFullyUpgradedAmount = 650* 1.5 -- was 650 
+kOnosHealth = 900 * 1.25 -- was 900    
+kOnosArmor = 450  * 1.25-- was 450   
+kOnosArmorFullyUpgradedAmount = 650* 1.25 -- was 650 
 kOnosPointValue = 30    
-kOnosHealtPerBioMass = 30 * 1.5 -- was 30
+kOnosHealtPerBioMass = 30 * 1.25 -- was 30
 
 
 
