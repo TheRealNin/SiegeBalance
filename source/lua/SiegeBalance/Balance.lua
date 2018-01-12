@@ -23,3 +23,10 @@ kARCMinRange = 0 -- was 7
 
 
 kCystUnconnectedDamage = 0.5 -- was 12
+
+kXenocideDamage = 225 -- was 200
+kXenocideDamageType = kDamageType.Light -- was kDamageType.Normal
+kXenocideRange = 10 -- was 14
+
+
+kDualExosuitCost = 45 -- was 55

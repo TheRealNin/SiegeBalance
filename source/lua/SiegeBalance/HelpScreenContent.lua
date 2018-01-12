@@ -69,7 +69,7 @@ function HelpScreen_InitializeContent()
         })
     -- Onos Buffs
      HelpScreen_AddContent({
-        name = "Onos_Buff2",
+        name = "Onos_Buff3",
         title = "Onos",
         description = "Boneshield is unlimited and blocks a larger 'cone' around your head.",
         imagePath = helpScreenImages.charge,
@@ -103,9 +103,9 @@ function HelpScreen_InitializeContent()
         })
     -- Jetpack
     HelpScreen_AddContent({
-        name = "Jetpack_Fuel",
-        title = "Jetpack fuel",
-        description = "Jetpacks now have 25% additional fuel and the weight of your items affects your acceleration and manuveability instead of fuel use.",
+        name = "Marine_Items",
+        title = "Jetpacks and Exos",
+        description = "Jetpacks now have a constant fuel use, but weight of items affect acceleration. Exo cost reduced to 45.",
         imagePath = helpScreenImages.jetpack,
         actions = {},
         classNames = {"Player"},
