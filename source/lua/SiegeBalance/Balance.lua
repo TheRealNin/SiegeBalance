@@ -30,3 +30,4 @@ kXenocideRange = 10 -- was 14
 
 
 kDualExosuitCost = 45 -- was 55
+kDualRailgunExosuitCost = 45 -- was 55
