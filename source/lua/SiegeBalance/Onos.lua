@@ -27,7 +27,7 @@ local function GetHitsBoneShield(self, doer, hitPoint)
     
         local viewDirection = GetNormalizedVectorXZ( self:GetViewCoords().zAxis )
         local zPosition = viewDirection:DotProduct( GetNormalizedVector( hitPoint - self:GetOrigin() ) )
-        return zPosition >= 0.34 --approx 115 degree cone of Onos facing
+        return zPosition >= 0.13 --approx 165 degree cone of Onos facing. Was 0.34 (~140 deg)
     
     end
     
