@@ -2,9 +2,6 @@
 kBoneShieldDamageReduction = 0.2 -- was 0.2 --80% for frontal, if it's on-screen(default fov) it's reduced
 kBoneShieldSustainCost =  0 -- was 22
 
--- new var
-kOnosChargeDamageReduction = 0.7
-
 kSkulkGestateTime = 3 -- was 3
 kGorgeGestateTime = 4 -- was 7
 kLerkGestateTime = 7  -- was 15
