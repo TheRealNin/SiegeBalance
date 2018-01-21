@@ -24,8 +24,8 @@ local function GetHitsBoneShield(self, doer, hitPoint)
     if table.contains(kBlockDoers, doer:GetClassName()) then
     
         local viewDirection = GetNormalizedVectorXZ( self:GetViewCoords().zAxis )
-        local zPosition = viewDirection:DotProduct( GetNormalizedVector( hitPoint - self:GetOrigin() ) )
-        return zPosition >= 0.34 --approx 115 degree cone of Onos facing
+        local dot = viewDirection:DotProduct( GetNormalizedVector( hitPoint - self:GetOrigin() ) )
+        return dot >= 0.13 --approx 165 degree cone of Onos facing
     
     end
     
