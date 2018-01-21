@@ -11,9 +11,6 @@ kOnosGestateTime = 13 -- was 30
 -- this is actually very buggy, and is 1-(x/100)
 kNutrientMistPercentageIncrease =  -100 -- was 66
 
-kNutrientMistCost = 5 -- was 2
-kNutrientMistCooldown = 5 -- was 2
-
 kGorgeTunnelBuildTime = 20 -- Was 10
 
 kARCMinRange = 0 -- was 7
@@ -23,8 +20,6 @@ kCystUnconnectedDamage = 0.5 -- was 12
 
 kXenocideDamage = 225 -- was 200
 kXenocideDamageType = kDamageType.Light -- was kDamageType.Normal
-kXenocideRange = 10 -- was 14
-
 
 kDualExosuitCost = 45 -- was 55
 kDualRailgunExosuitCost = 45 -- was 55

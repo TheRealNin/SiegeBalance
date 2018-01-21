@@ -82,7 +82,7 @@ function HelpScreen_InitializeContent()
      HelpScreen_AddContent({
         name = "Acid_Rocket",
         title = "Acid Rocket",
-        description = "Fuck stab. We've replaced it with acid rockets. This however makes Fade's health regen from metabolize about half as effective.",
+        description = "Fuck stab. We've replaced it with acid rockets.",
         imagePath = helpScreenImages.stab,
         actions = {},
         classNames = {"Player"},
@@ -115,9 +115,9 @@ function HelpScreen_InitializeContent()
         
     -- Armories
     HelpScreen_AddContent({
-        name = "Marine_Structures",
+        name = "Marine_Structures2",
         title = "Marine Buildings",
-        description = "Armories now regenerate armor. Phase gates now have red and blue 'channels'. Sentries take no supply. Marine commanders can drop un-researched weapons. GL and FT require research. ",
+        description = "Armories now regenerate armor. Phase gates now have red and blue 'channels'. Marine commanders can drop un-researched weapons. GL and FT require research. ",
         imagePath = helpScreenImages.welder,
         actions = {},
         classNames = {"Player"},

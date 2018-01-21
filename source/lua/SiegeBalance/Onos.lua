@@ -1,5 +1,6 @@
 
 
+
 local kBlockDoers =
 {
     "Minigun",
@@ -15,11 +16,8 @@ local kBlockDoers =
     "PulseGrenade",
     "ClusterFragment",
     "Mine",
-    "Claw",
-    "Railgun",
-    "GrenadeLauncher"
+    "Claw"
 }
-
 
 local function GetHitsBoneShield(self, doer, hitPoint)
 
