@@ -75,3 +75,11 @@ function HelpScreen:Uninitialize()
     end
     
 end
+
+local oldInitialize = HelpScreen.Initialize
+function HelpScreen:Initialize()
+    oldInitialize(self)
+    
+    self.hotkeyDescription:SetText("Balance changes!")
+    self:Update(0)
+end
