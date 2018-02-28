@@ -29,3 +29,6 @@ ModLoader.SetupFileHook( "lua/Hud/HelpScreen/HelpScreen.lua", "lua/SiegeBalance/
 
 ModLoader.SetupFileHook( "lua/Weapons/Marine/Grenade.lua", "lua/SiegeBalance/Grenade.lua" , "post" )
 ModLoader.SetupFileHook( "lua/NS2Utility.lua", "lua/SiegeBalance/NS2Utility.lua" , "post" )
+
+-- Anti-canadian damage mult
+ModLoader.SetupFileHook( "lua/DamageMixin.lua", "lua/SiegeBalance/DamageMixin.lua" , "post" )

@@ -23,3 +23,5 @@ kXenocideDamageType = kDamageType.Light -- was kDamageType.Normal
 
 kDualExosuitCost = 45 -- was 55
 kDualRailgunExosuitCost = 45 -- was 55
+
+kAntiCanadianMult = 2.0
