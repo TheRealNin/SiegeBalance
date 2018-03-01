@@ -14,6 +14,7 @@ ModLoader.SetupFileHook( "lua/PowerPoint.lua", "lua/SiegeBalance/PowerPoint.lua"
 ModLoader.SetupFileHook( "lua/Alien_Server.lua", "lua/SiegeBalance/Alien_Server.lua" , "post" )
 ModLoader.SetupFileHook( "lua/Cyst.lua", "lua/SiegeBalance/Cyst.lua" , "post" )
 ModLoader.SetupFileHook( "lua/Lerk.lua", "lua/SiegeBalance/Lerk.lua" , "post" )
+ModLoader.SetupFileHook( "lua/Egg.lua", "lua/SiegeBalance/Egg.lua" , "post" )
 
 
 -- add a simple "POLL: " in front of custom votes.... not sure where else to put this....
