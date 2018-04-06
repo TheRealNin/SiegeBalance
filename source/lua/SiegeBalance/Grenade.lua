@@ -23,10 +23,6 @@ if Server then
         -- TODO: use what is defined in the material file
         local surface = GetSurfaceFromEntity(targetHit)
         
-        if GetIsVortexed(self) then
-            surface = "ethereal"
-        end
-        
         local params = { surface = surface }
         params[kEffectHostCoords] = Coords.GetLookIn( self:GetOrigin(), self:GetCoords().zAxis)
         
