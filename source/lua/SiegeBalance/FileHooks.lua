@@ -34,3 +34,15 @@ ModLoader.SetupFileHook( "lua/NS2Utility.lua", "lua/SiegeBalance/NS2Utility.lua"
 
 -- Anti-canadian damage mult
 ModLoader.SetupFileHook( "lua/DamageMixin.lua", "lua/SiegeBalance/DamageMixin.lua" , "post" )
+
+-- reduce sound distance
+ModLoader.SetupFileHook( "lua/SoundEffect.lua", "lua/SiegeBalance/SoundEffect.lua" , "post" )
+
+-- disable sound occlusion for better client perf
+-- putting here because hooking Client.lua doesn't work anymore
+if Client then
+	local function DisableSoundOcclusion()
+		Client.SetSoundGeometryEnabled(false)
+	end
+	Event.Hook("LocalPlayerChanged", DisableSoundOcclusion)
+end
