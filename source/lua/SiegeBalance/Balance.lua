@@ -11,7 +11,7 @@ kOnosGestateTime = 13 -- was 30
 -- this is actually very buggy, and is 1-(x/100)
 kNutrientMistPercentageIncrease =  -100 -- was 66
 
-kGorgeTunnelBuildTime = 20 -- Was 10
+kGorgeTunnelBuildTime = 30 -- Was 10
 
 kARCMinRange = 0 -- was 7
 
@@ -25,3 +25,6 @@ kDualExosuitCost = 45 -- was 55
 kDualRailgunExosuitCost = 45 -- was 55
 
 kAntiCanadianMult = 1.0
+
+kRailgunDamage = 0 -- was 10
+kRailgunChargeDamage = 140 -- was 140 (+10 due to base damage)
