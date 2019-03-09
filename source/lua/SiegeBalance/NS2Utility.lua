@@ -40,3 +40,13 @@ function RadiusDamage(entities, centerOrigin, radius, fullDamage, doer, ignoreLO
     end
     
 end
+
+
+local oldBuildClassToGrid = BuildClassToGrid
+function BuildClassToGrid()
+	local ClassToGrid = oldBuildClassToGrid()
+	
+	ClassToGrid["Contamination"] = { 8, 1 }
+	
+	return ClassToGrid
+end

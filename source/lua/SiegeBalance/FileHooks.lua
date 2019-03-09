@@ -25,6 +25,9 @@ ModLoader.SetupFileHook( "lua/Voting.lua", "lua/SiegeBalance/Voting.lua" , "post
 ModLoader.SetupFileHook( "lua/Hud/HelpScreen/HelpScreenContent.lua", "lua/SiegeBalance/HelpScreenContent.lua" , "post" )
 ModLoader.SetupFileHook( "lua/Hud/HelpScreen/HelpScreen.lua", "lua/SiegeBalance/HelpScreen.lua" , "post" )
 
+-- Railgun buff
+ModLoader.SetupFileHook( "lua/Weapons/Marine/Railgun.lua", "lua/SiegeBalance/Railgun.lua" , "post" )
+
 
 
 -- these are fixes to NS2's shitty code
@@ -37,6 +40,10 @@ ModLoader.SetupFileHook( "lua/DamageMixin.lua", "lua/SiegeBalance/DamageMixin.lu
 
 -- reduce sound distance
 ModLoader.SetupFileHook( "lua/SoundEffect.lua", "lua/SiegeBalance/SoundEffect.lua" , "post" )
+
+-- contaminate detection fix
+ModLoader.SetupFileHook( "lua/CommAbilities/Alien/Contamination.lua", "lua/SiegeBalance/Contamination.lua" , "post" )
+ModLoader.SetupFileHook( "lua/GUIMinimap.lua", "lua/SiegeBalance/GUIMinimap.lua" , "post" )
 
 -- disable sound occlusion for better client perf
 -- putting here because hooking Client.lua doesn't work anymore
