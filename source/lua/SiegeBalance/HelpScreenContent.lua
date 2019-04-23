@@ -56,28 +56,6 @@ function HelpScreen_InitializeContent()
         theme = "marine",
         useLocale = false,
         })
-    -- Alien Buffs
-     HelpScreen_AddContent({
-        name = "Alien_Buff4",
-        title = "Aliens Buffed",
-        description = "All alien HP increased by 25% (except fade who gets +15%). Aliens evolve faster, and don't need to be misted. Crags heal faster the longer it's been since you took damage, but don't work off of infestation.",
-        imagePath = helpScreenImages.leap,
-        actions = {},
-        classNames = {"Player"},
-        theme = "alien",
-        useLocale = false,
-        })
-    -- Onos Buffs
-     HelpScreen_AddContent({
-        name = "Onos_Buff3",
-        title = "Onos",
-        description = "Boneshield is unlimited and blocks a larger 'cone' around your head.",
-        imagePath = helpScreenImages.charge,
-        actions = {},
-        classNames = {"Player"},
-        theme = "alien",
-        useLocale = false,
-        })
         -- Fade Acid Rocket
      HelpScreen_AddContent({
         name = "Acid_Rocket",
@@ -101,18 +79,6 @@ function HelpScreen_InitializeContent()
         theme = "alien",
         useLocale = true,
         })
-    -- Jetpack
-    HelpScreen_AddContent({
-        name = "Marine_Items",
-        title = "Jetpacks and Exos",
-        description = "Jetpacks now have a constant fuel use, but weight of items affect acceleration. Exo cost reduced to 45.",
-        imagePath = helpScreenImages.jetpack,
-        actions = {},
-        classNames = {"Player"},
-        theme = "marine",
-        useLocale = true,
-        })
-        
     -- Armories
     HelpScreen_AddContent({
         name = "Marine_Structures2",

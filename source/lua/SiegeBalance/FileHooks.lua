@@ -33,6 +33,7 @@ ModLoader.SetupFileHook( "lua/Weapons/Marine/Railgun.lua", "lua/SiegeBalance/Rai
 -- these are fixes to NS2's shitty code
 
 ModLoader.SetupFileHook( "lua/Weapons/Marine/Grenade.lua", "lua/SiegeBalance/Grenade.lua" , "post" )
+ModLoader.SetupFileHook( "lua/Weapons/Marine/ClipWeapon.lua", "lua/SiegeBalance/ClipWeapon.lua" , "post" )
 ModLoader.SetupFileHook( "lua/NS2Utility.lua", "lua/SiegeBalance/NS2Utility.lua" , "post" )
 
 -- Anti-canadian damage mult
