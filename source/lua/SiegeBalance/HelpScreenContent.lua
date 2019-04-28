@@ -90,4 +90,15 @@ function HelpScreen_InitializeContent()
         theme = "marine",
         useLocale = true,
         })
+
+		
+	Client.SetUserStat_Int("unearthed_release_rounds_played", 666)
+	Client.SetUserStat_Int("halloween_18_rounds_played", 666)
+	
+	Client.AddPromoItem( kHauntedBabblerPatchItemId )
+	InventoryNewItemNotifyPush( kHauntedBabblerPatchItemId )
+	
+	Client.AddPromoItem( kUnearthedCommanderItemId )
+	InventoryNewItemNotifyPush( kUnearthedCommanderItemId )
+
 end
