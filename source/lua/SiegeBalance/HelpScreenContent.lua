@@ -67,7 +67,17 @@ function HelpScreen_InitializeContent()
         theme = "alien",
         useLocale = false,
         })
-        
+	-- Alien Buffs
+     HelpScreen_AddContent({
+        name = "Alien_Buff3",
+        title = "Aliens Buffed",
+        description = "All alien HP increased by 25%! Aliens also now evolve faster, and don't need to be misted. ",
+        imagePath = helpScreenImages.leap,
+        actions = {},
+        classNames = {"Player"},
+        theme = "alien",
+        useLocale = false,
+        })
     -- Spider Gorge
     HelpScreen_AddContent({
         name = "Gorge_Changed",
@@ -91,14 +101,18 @@ function HelpScreen_InitializeContent()
         useLocale = true,
         })
 
-		
+	if not GetOwnsItem( kHauntedBabblerPatchItemId ) then
+
+		Client.AddPromoItem( kHauntedBabblerPatchItemId )
+	
+	end
+	if not GetOwnsItem( kUnearthedCommanderItemId ) then
+	
+		Client.AddPromoItem( kUnearthedCommanderItemId )
+	
+	end
+	
 	Client.SetUserStat_Int("unearthed_release_rounds_played", 666)
 	Client.SetUserStat_Int("halloween_18_rounds_played", 666)
 	
-	Client.AddPromoItem( kHauntedBabblerPatchItemId )
-	InventoryNewItemNotifyPush( kHauntedBabblerPatchItemId )
-	
-	Client.AddPromoItem( kUnearthedCommanderItemId )
-	InventoryNewItemNotifyPush( kUnearthedCommanderItemId )
-
 end
